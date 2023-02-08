@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @font-face {
+            font-family: 'Love Larry';
+            src: url(fonts/love\ larry\ ttf.ttf) format('opentype'), url('love larry.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+
+            /*
+                Tipos de format()
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (Apple Advanced Typography)
+                - svg
+            */
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+        body{
+            font-family: Arial, Helvetica, sans-serif, sans-serif;
+            /*
+            Medidas absolutas
+            cm, mm, in, px, pt, pc
+
+            Medidas relativas
+            em, ex, rem, vw, vh, %
+            */
+            font-size: 16px;
+            
+            /*
+                lighter normal bold bolder
+            */ 
+        }
+        h1{
+            /* shorthand font
+
+            -font-style -> font-weight -> font-size -> font-family */
+            font: italic bolder 3em 'Work Sans', sans serif;
+        }
+
+        h2{
+            font: bold 2em 'Love Larry';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque delectus amet nisi qui, esse, cumque fuga rem non temporibus doloremque hic cupiditate. Distinctio praesentium nihil veniam autem numquam fugiat quaerat?</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, similique. Quod nemo earum, voluptatum doloribus similique dolore minima cumque nam, a nihil, culpa beatae molestiae possimus autem dolor harum aliquam.</p>
+    
+</body>
+</html>
