@@ -6,19 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio do Astronauta</title>
     <style>
-        body{
-            height: 97vh;
-            background-color: black;
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #container{
+            height: 95vh;
             background-image: url(images/espaco.jpg);
-            background-position: center center;
-            background-size: cover;
-            
+            background-size: 100% 100%;
+            position: relative;
+            padding: 18px;
 
+        }
+
+        #conteudo{
+            background-image: url(images/astronauta.png);
+            background-size: 100% 100%;
+            position: absolute;
+            height: 500px;
+            min-width: 508px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50% ,-50%);
+
+            
         }
     </style>
 </head>
 <body>
-    <div>
-    </div>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
 </body>
 </html>
